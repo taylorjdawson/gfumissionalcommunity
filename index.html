@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>George Fox Missional Community</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+    <style>
+        .navbar {
+            background-color: black;
+        }
+
+        .icon-custom {
+            display: inline-flex;
+            vertical-align: middle;
+            padding-right: .35em;
+            padding-bottom: 8.3px;
+            font-size: 6vh;
+            /*TODO: maybe try em?? I never know...*/
+        }
+
+        .content {
+            font-size: 15px;
+            line-height: 2.9rem;
+        }
+
+        @media(min-width:767px) {
+            .navbar {
+                padding: 20px 0;
+                -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+                -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+                transition: background .5s ease-in-out,padding .5s ease-in-out;
+            }
+
+            .top-nav-collapse {
+                padding: 0;
+            }
+        }
+
+        .section-header {
+            background-size: cover;
+            background-position: center;
+            /*height: 50vh;*/
+        }
+
+        .section-content {
+            padding-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .title header {
+            text-align: center;
+            color: white;
+        }
+        .module {
+
+            background-attachment: fixed;
+            width: 400px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .module > header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10px;
+            background: inherit;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .module > header::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: inherit;
+            background-attachment: fixed;
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+        }
+        .module > header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.25)
+        }
+        .module > header > h1 {
+            margin: 0;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body id="page-top" class="index-page" data-target=".navbar-fixed-top">
+<!--TODO: Add scrolling nav bar and collapse nav bar onclick-->
+<!-- Navbar will come here -->
+<nav class="navbar navbar-fixed-top navbar-color-on-scroll navbar-transparent" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header page-scroll">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand page-scroll" href="#page-top">GFU MC</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<!--TODO: Look at adding padding-->
+				<!--TODO: Make sure it scales-->
+				<li><a class="page-scroll" href="#heart_posture"><i class="material-icons ">favorite</i>Posture</a></li>
+				<li><a class="page-scroll" href="#origin">Origin</a></li>
+                <li><a class="page-scroll" href="#communion">Communion</a></li>
+                <li><a class="page-scroll" href="#serving">Serving</a></li>
+                <li><a class="page-scroll" href="#gatherings">Gathering</a></li>
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#" data-toggle="modal" data-target="#myModal" >MC&ndash;ers</a></li>-->
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- end navbar -->
+
+<div class="wrapper">
+	<div class="header" style="background-image: url('assets/img/GFU_Centennial_Tower_landscape.JPG'); transform: translate3d(0px, 0px, 0px);">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="brand">
+                        <h1>GFU Missional Community</h1>
+                        <h3>At GFU as it is in heaven...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <!--<img src="assets/img/person_subway.jpeg" alt="Rounded Image" class="img-rounded img-raised img-responsive" style="width: 500px">-->
+	<div id="heart_posture" class="main main-raised">
+
+        <!--Heart Posture-->
+        <div class="section section-full-screen section-header" style="background-image: url('assets/img/bible_heart.jpeg'); background-position-y:top;" id="heart">
+            <div class="container">
+                <div class="title">
+                    <header><h1><i class="material-icons icon-custom">favorite</i>Posture</h1></header>
+                </div>
+            </div>
+        </div>
+            <div class="section section-content" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                            <div class="content">
+                                <p>We are currently experiencing a cultural shift: the secularization of modern society.
+                                    Navigating through life in this post-Christian culture can prove difficult.
+                                    We believe <a href="http://bridgetown.church/" target="_blank">Bridgetown church</a>
+                                    to be particularly attuned to the unique challenges
+                                    that come with. It must be noted, however, that we do not seek to champion one
+                                    church over another, as Emerson Eggerichs says "it's not wrong, just different."
+                                    <a href="http://loveandrespect.com/blog/not-wrong-just-different/"><sup>1</sup></a>
+                                    While his words are admittedly taken out of context,
+                                    they reveal a truth that accurately pertains to our multi-denominational Christianity.
+                                </p>
+                                <p>
+                                    The heart of Bridgetown church is the Missional Community. Bridgetown gatherings are only
+                                    the "tip of the iceberg". Church is so much more than showing up on a Sunday to chant a few
+                                    songs and hear a sermon. Bridgetown is called to minister to Portland neighborhoods.
+                                    But this  It is our desire to provide a community for those who
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Origin-->
+            <div class="section section-full-screen section-header" style="background-image: url('assets/img/1545-dawn-sunset-person.jpg')"
+                 id="origin">
+                <div class="container">
+                    <div class="title">
+                        <header><h1>Origin</h1></header>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                            <div class="content">
+                                <p>
+                                    Fixie dreamcatcher chillwave truffaut shoreditch salvia shaman shabby chic organic
+                                    forage polaroid gentrify hella. Tattooed ethical schlitz tilde YOLO try-hard raw
+                                    denim hexagon pour-over stumptown lyft brunch leggings single-origin coffee health
+                                    goth. Church-key tilde lo-fi slow-carb, VHS intelligentsia 3 wolf moon street art
+                                    migas. Hoodie gentrify 8-bit, authentic unicorn synth fingerstache small batch green
+                                    juice. Vinyl keffiyeh snackwave helvetica cred glossier. Chicharrones DIY adaptogen
+                                    pop-up flexitarian raclette forage chia migas. Art party health goth slow-carb, gentrify
+                                    poutine pok pok swag sustainable PBR&B copper mug banh mi. Church-key wayfarers pork
+                                    belly four dollar toast offal, blog pinterest selfies slow-carb marfa put a bird on it
+                                    art party.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--TODO: Change to Communing?????-->
+            <!--Communion-->
+        <div class="section section-full-screen section-header" style="background-image: url('assets/img/Bible-Study.jpg')"
+             id="communion">
+            <div class="container">
+                <div class="title">
+                    <header><h1>Communion</h1></header>
+                </div>
+            </div>
+        </div>
+            <div class="section section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                            <div class="content">
+                                <p>
+                                    Salvia tilde lumbersexual succulents affogato meh occupy DIY.
+                                    Waistcoat sustainable chartreuse coloring book, gentrify wolf
+                                    microdosing YOLO enamel pin pour-over austin cold-pressed. Ugh
+                                    direct trade woke, pug godard four dollar toast edison bulb health
+                                    goth synth next level. Tbh 90's chartreuse tattooed single-origin
+                                    coffee swag listicle pork belly williamsburg marfa heirloom typewriter.
+                                    Woke trust fund activated charcoal skateboard polaroid edison bulb blog
+                                    fashion axe tacos. Sartorial brooklyn XOXO, YOLO biodiesel gentrify keffiyeh
+                                    poutine. Everyday carry lo-fi mumblecore drinking vinegar skateboard tattooed
+                                    squid asymmetrical sustainable listicle banh mi vegan waistcoat stumptown.
+                                    Vice etsy shabby chic, wayfarers readymade hexagon unicorn authentic ramps
+                                    pabst paleo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Serving-->
+            <div class="section section-full-screen section-header" style="background-image: url('assets/img/serving-people.jpg')"
+                 id="serving">
+                <div class="container">
+                    <div class="title">
+                        <header><h1>Serving</h1></header>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                            <div class="content">
+                                <p>
+                                    Unicorn banjo iPhone tofu. +1 distillery swag, actually unicorn keffiyeh af
+                                    franzen pour-over skateboard tattooed banh mi affogato. Twee leggings etsy
+                                    XOXO hammock air plant brunch paleo slow-carb ramps echo park activated charcoal.
+                                    Mumblecore cliche brunch typewriter chicharrones kickstarter, chia pinterest tilde
+                                    readymade fam pok pok vice kogi. Bicycle rights williamsburg retro flexitarian pok
+                                    pok twee put a bird on it portland yuccie hot chicken subway tile cred. Crucifix
+                                    authentic blue bottle salvia air plant scenester pickled vape glossier af snackwave
+                                    shabby chic edison bulb shoreditch pug. Brooklyn coloring book stumptown, 8-bit gentrify
+                                    kombucha viral pug. Venmo gluten-free street art kitsch shabby chic hell of leggings
+                                    art party forage fixie bespoke edison bulb godard fanny pack. Gastropub fingerstache
+                                    glossier sartorial waistcoat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Gatherings-->
+
+            <div class="section section-full-screen section-header" style="background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(assets/img/solid-rock-downtown-scaled.png);
+            background-position: center;background-size: cover;" id="gatherings">
+                <div class="container">
+                    <div class="title">
+                        <header><h1>Gatherings</h1></header>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                            <div class="content">
+                                <p>
+                                    Chartreuse hoodie aesthetic, hella heirloom vexillologist 8-bit quinoa shabby chic.
+                                    Enamel pin organic schlitz scenester la croix kombucha pitchfork retro pug live-edge.
+                                    Raw denim 3 wolf moon pickled bitters put a bird on it. Next level XOXO squid vape
+                                    four dollar toast, vice trust fund. Taxidermy photo booth cronut, forage quinoa post-ironic
+                                    direct trade YOLO portland tacos humblebrag fanny pack. Photo booth pinterest vegan,
+                                    roof party shaman hashtag tattooed austin gochujang edison bulb. Aesthetic venmo bicycle
+                                    rights four dollar toast drinking vinegar PBR&B. Chia pinterest ethical synth, microdosing
+                                    normcore chillwave. Ugh next level mixtape swag, dreamcatcher semiotics +1 90's vegan cronut
+                                    pabst schlitz wayfarers. Messenger bag kitsch biodiesel helvetica af pop-up, artisan vice.
+                                    Kickstarter vexillologist shoreditch, vegan venmo everyday carry bitters cray meditation umami.
+                                    Tbh flannel four dollar toast bespoke hexagon.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--Fellowship-->
+        <div class="section" id="fellowship">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="text-center title">Fellowship with us</h2>
+                            <h4 class="text-center description">If you feel like your heart aligns with ours and you
+                                want to enter into community with us,
+                                we'd absolutely love to have you! Please fill out the form below and
+                                we'll be in touch with more information, such as, where we meet, as well as,
+                                coordinating transportation to the sunday gatherings.</h4>
+                            <form class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Your Name</label>
+                                            <input type="email" class="form-control">
+                                            <span class="material-input"></span></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Your Email</label>
+                                            <input type="email" class="form-control">
+                                            <span class="material-input"></span></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4 text-center">
+                                        <button class="btn btn-raised">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<!--Sign-in modal-->
+<!-- Modal Core -->
+<!--TODO: Ask Anna how necessary this is-->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="card card-signup">-->
+                <!--<form class="form" method="" action="">-->
+                    <!--<div class="header header-primary text-center">-->
+                        <!--<h4>Sign In</h4>-->
+                    <!--</div>-->
+                    <!--<p class="text-divider">For the safe</p>-->
+                    <!--<div class="content">-->
+                        <!--<div class="input-group">-->
+										<!--<span class="input-group-addon">-->
+											<!--<i class="material-icons">lock_outline</i>-->
+										<!--</span>-->
+                            <!--<input type="password" placeholder="Password..." class="form-control" />-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<footer class="footer">
+    <div class="container">
+        <!--<nav class="pull-left">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<a href="#">About Us</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">Blog</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">Place 3</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">Place 4</a>-->
+                <!--</li>-->
+
+            <!--</ul>-->
+        <!--</nav>-->
+        <div class="copyright pull-right">
+            © 2017, made with <i class="material-icons">favorite</i> by <a href="http://taylorjdawson.com" target="_blank">Taylor Dawson</a>.
+        </div>
+    </div>
+</footer>
+
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+</html>
